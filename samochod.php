@@ -65,6 +65,28 @@ class Samochod implements SamochodInterface{
 
 }
 
+class SamochodWyscigowy extends Samochod implements SamochodWyscigowyInterface{
+	
+
+	public function getPredkoscMaksymalna(){
+		return $this->getPredkoscMaksymalna;
+	}
+
+	public function getPrzyspieszenie(){
+		return $this->getPrzyspieszenie;
+	}
+
+
+}
+
+class Silnik implements SilnikInterface{
+
+	public function getMoc(){
+		return $this->getMoc;
+	}
+
+}
+
 
 
 
