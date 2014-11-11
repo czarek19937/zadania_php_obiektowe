@@ -1,6 +1,8 @@
 <?php
 
 include_once('samochod.php');
+include_once('silnik.php');
+include_once('samochodWyscigowy.php');
 
 				/*$mojSamochod = new Samochod();
 				$mojSamochod->Samochody('Seat','Ibiza','czarny','sedan');

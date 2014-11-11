@@ -1,5 +1,9 @@
 <?php
 
+
+include_once('samochodWyscigowyInterface.php');
+
+
 class SamochodWyscigowy extends Samochod implements SamochodWyscigowyInterface{
 	
 
