@@ -9,7 +9,7 @@ class SamochodWyscigowy extends Samochod implements SamochodWyscigowyInterface{
 
 	private $silnik;
 	public function SamochodWyscigowy(Silnik $a){
-		$this->silnik=$silnik;
+		$this->silnik=$a;
 
 	}
 	public function getPredkoscMaksymalna(){
