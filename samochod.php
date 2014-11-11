@@ -26,6 +26,7 @@ class Samochod implements SamochodInterface{
 				$this->model=$model;
 				$this->kolor=$kolor;
 				$this->typ=$typ;
+				$this->PredkoscMaksymalna()=$silnik->getMoc()*1000;
 		}
 
 		public function helloSamochod(){
@@ -68,6 +69,11 @@ class Samochod implements SamochodInterface{
 class SamochodWyscigowy extends Samochod implements SamochodWyscigowyInterface{
 	
 
+	private $silnik;
+	public function SamochodWyscigowy(Silnik $a){
+		$this->silnik=$silnik;
+
+	}
 	public function getPredkoscMaksymalna(){
 		return $this->getPredkoscMaksymalna;
 	}
@@ -81,6 +87,7 @@ class SamochodWyscigowy extends Samochod implements SamochodWyscigowyInterface{
 
 class Silnik implements SilnikInterface{
 
+	public $silnik;
 	public function getMoc(){
 		return $this->getMoc;
 	}
