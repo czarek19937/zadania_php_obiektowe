@@ -32,6 +32,8 @@ include_once('samochodWyscigowy.php');
 				$innySamochod = new Samochod("Ford", "Escort", "Czerwony", "Sedan");
 				echo $innySamochod->helloSamochod();
 
+				echo "Kolor innego samochodu: ".$innySamochod->getKolor()."\n";
+
 				function otoSamochod(Samochod $s){
 					$opis="otoSamochod ".$s->getMarka()."\n";
 					return $opis;
@@ -40,6 +42,18 @@ include_once('samochodWyscigowy.php');
             
 				echo otoSamochod($mojSamochod);
 				echo otoSamochod($innySamochod);
+
+
+				$sw = new SamochodWyscigowy(new Silnik(80));
+				echo $sw->helloSamochod();
+				echo "Predkosc Maksymalna wynosi: ".$sw->getPredkoscMaksymalna()."\nPrzyspieszenie wynosi: ".$sw->getPrzyspieszenie()."\n";
+
+				$sw->setSilnik(new Silnik(120));
+
+				echo "Predkosc Maksymalna wynosi: ".$sw->getPredkoscMaksymalna()."\nPrzyspieszenie wynosi: ".$sw->getPrzyspieszenie()."\n";
+
+
+				//echo $sw
 
 
 				//$liczba_aut = Samochod::$licznik;

@@ -26,7 +26,6 @@ class Samochod implements SamochodInterface{
 				$this->model=$model;
 				$this->kolor=$kolor;
 				$this->typ=$typ;
-				$this->PredkoscMaksymalna()=$silnik->getMoc()*1000;
 		}
 
 		public function helloSamochod(){
